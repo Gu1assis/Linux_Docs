@@ -1,0 +1,29 @@
+NEOVIM
+
+winget install Neovim.Neovim
+
+COMANDOS
+
+:Ex => abre o explorer do nvim
+% => Criar novo arquivo neste diretório
+:e <nomedoarquivo> procura e abre esse arquivo
+d criar diretório
+
+Editando TEXTO:
+
+Shift+V => seleciona a linha, use hjkl para mover a selecao
+
+y, p => copie e cola, respectivamente. yy ele copia a linha inteira
+d, dd => apaga selecionado ou a linha toda
+:3 => vai para a linha 3
+<numero>k => sobe o cursor numero vezes. Pode ser usado com outros tbm
+f<char> => vai para a primeira instância encontrada daquele char
+w => próxima palavra
+
+ci + Caractere => apaga tudo que está entre este caractere (Ex: "", (), {}) e move o cursor pro meio destes caracteres
+cw => apaga próxima palavra
+
+Options uteis:
+
+keybinds.lua
+vim.keymap.set("n", "<leader>cd", vim.cmd.Ex) -> troca Ex por  espaço + cd
