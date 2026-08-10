@@ -35,6 +35,12 @@ Para ver quais USE flags sao necessarias para um dado pacote binario execute:
 
 emerge --pretend --verbose --getbinpkg --usepkgonly --binpkg-respect-use=n <pacote>
 
+Voce pode verificar o progresso de uma instalcao usando o genlop, que pode ser instalado com
+
+emerge -a app-portage/genlop
+
+e use com genlop -c, por exemplo.
+
 ### Despachar configuracoes de package.use
 
 dispatch-conf
@@ -44,3 +50,5 @@ dispatch-conf
 sensors -> ver temperatura e rpm e outras info do hardware. Vem do pacote sys-apps/lm-sensors
 
 upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage -> Meu caminho atual para ver a bateria usando upower.
+
+
