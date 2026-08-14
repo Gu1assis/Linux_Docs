@@ -24,6 +24,10 @@ emerge --searchdesc <descricao> (ou -S)
 
 emerge -a pacote/pacote
 
+Voce pode checar as USE flags disponiveis para este pacote, usando:
+
+emerge -vp pac/pac
+
 Para instalar o binario pre-compilado do servidor use:
 
 emerge -a -g pacote/pacote

@@ -19,3 +19,11 @@ swaybg -> wallpaper app
 ## Other stuff
 
 font used: ttf-jetbrains-mono-nerd
+
+terminal emulator: foot 
+You can find my config at my dotfiles repo
+
+pdf reader: zathura and mupdf (backend)
+emerge --ask app-text/zathura app-text/zathura-meta
+emerge --ask app-text/zathura-pdf-mupdf
+
