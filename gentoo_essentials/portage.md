@@ -1,5 +1,19 @@
 # Portage e Packages
 
+## Sync e Atualizacao
+
+Voce pode sincronizar sua lista de pacotes com a do servidor com:
+
+```
+emerge --sync
+```
+
+E atualizar todos os pacotes do sistema usando:
+
+```
+emerge --update --deep --newuse @world
+```
+
 ## Procurar pacotes
 
 Verificar se pacote esta instalado 
@@ -58,6 +72,14 @@ echo "<categoria>/<app> ~amd64" >> /etc/portage/package.accept_keywords/<app>
 ```
 
 ou algo semelhante.
+
+De forma mais pratica, voce pode aceitar globalmente, por exemplo pro caso de masks de testes:
+
+```
+echo 'ACCEPT_KEYWORDS="~amd64"' >> /etc/portage/make.conf
+```
+
+Mas tenha em mente que se voce rodar uma atualizacao geral, vai atualizar tudo para a mais recente com pacotes ainda em fase de testes.
 
 ### Binarios pre compilados
 
