@@ -47,6 +47,18 @@ Voce pode checar as USE flags disponiveis para este pacote, usando:
 emerge -vp <categoria>/<app>
 ```
 
+### Use flags
+
+Um pacote pode exigir USE flags que nao estao no seu make.conf do sistema. 
+Para adicionar flags para um dado pacote, e so colocar num arquivo dedicado dentro
+de package.use.
+
+Essa estrutura eh bem util:
+
+```
+echo "<categoria>/<app> <flag1> <flag2>" | sudo tee -a /etc/portage/package.use/<app>
+```
+
 ### Unmasks
 
 Alguns pacotes podem pedir que voce retirar mascaras
