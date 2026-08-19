@@ -27,3 +27,7 @@ pdf reader: zathura and mupdf (backend)
 emerge --ask app-text/zathura app-text/zathura-meta
 emerge --ask app-text/zathura-pdf-mupdf
 
+image viewer: viewernior for mouse and imv
+emerge --ask media-gfx/imv
+emerge --ask media-gfx/sxiv
+usage: imv 
