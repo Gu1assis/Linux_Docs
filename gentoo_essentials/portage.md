@@ -123,3 +123,27 @@ e use com genlop -c, por exemplo.
 ```
 dispatch-conf
 ```
+
+## Listar e gerenciar pacotes instalados
+
+usando o equery, podemos listar os pacotes listados com:
+
+```
+equery list "*"
+```
+
+Com essa lista vc pode fazer um `grep`, contar quantidade com `wc -l` ou colocar no `fzf`
+para uma pesquisa dinamica com fuzzyfinder
+
+Para remover um pacote, remova-o primeiro do seu world file:
+
+```
+sudo emerge --deselect <categoria>/<pacote>
+```
+
+E remova o pacote e as dependencias que nao estao sendo usadas por outros pacotes com o depclean:
+
+```
+sudo emerge --ask --depclean
+```
+
